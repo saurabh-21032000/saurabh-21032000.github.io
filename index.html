@@ -26,6 +26,7 @@
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -505,6 +506,39 @@
       gap: 22px;
     }
 
+    .feedback-form {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea,
+    .feedback-form select {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.05);
+      color: var(--text);
+      font: inherit;
+      outline: none;
+    }
+
+    .feedback-form input::placeholder,
+    .feedback-form textarea::placeholder {
+      color: #9ba7bd;
+    }
+
+    .feedback-form textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .feedback-form select {
+      appearance: none;
+    }
+
     .sticky-resume {
       position: fixed;
       right: 18px;
@@ -554,7 +588,8 @@
       .nav-inner { flex-direction: column; align-items: flex-start; }
       .nav-links { gap: 14px; }
       .hero-actions .btn,
-      .resume-box .btn { width: 100%; }
+      .resume-box .btn,
+      .feedback-form .btn { width: 100%; }
       .metric-grid,
       .tool-row { grid-template-columns: 1fr; }
       .panel, .project-card, .contact-card, .strength-card, .tool-card, .domain-card, .feedback-card, .hero-card, .timeline-item, .resume-box {
@@ -579,9 +614,9 @@
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#hire-me">Why Hire Me</a>
-        <a href="#feedback">Feedback</a>
+        <a href="#feedback">Contact</a>
         <a href="#resume" class="resume-link">Resume</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact">Details</a>
       </nav>
     </div>
   </header>
@@ -962,25 +997,40 @@
     <section id="feedback">
       <div class="container">
         <div class="section-head">
-          <div class="eyebrow">Feedback</div>
-          <h2>Contact / Hiring Form</h2>
-          <p>For fastest response, use this form instead of email.</p>
+          <div class="eyebrow">Contact</div>
+          <h2>Work With Me</h2>
+          <p>Hiring, freelance, collaboration, or general inquiry.</p>
         </div>
+
         <div class="feedback-grid">
           <div class="feedback-card">
-            <h3>Work With Me</h3>
-            <p class="muted">Hiring, freelance, collaboration, or general inquiry.</p>
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSeVqzirCMRdV4phe3VT_4nw0LO0JA_4OCnA9gKp9ypBHBvhhA/viewform?embedded=true"
-              width="100%"
-              height="720"
-              frameborder="0"
-              marginheight="0"
-              marginwidth="0"
-              style="border-radius: 24px; background: #ffffff; border: 1px solid rgba(255,255,255,0.08);">
-              Loading…
-            </iframe>
+            <h3>Send a message</h3>
+            <p class="muted">I typically respond within 24 hours.</p>
+
+            <form action="https://formspree.io/f/xvzvdvkz" method="POST" class="feedback-form">
+              <input type="text" name="name" placeholder="Your full name" required />
+
+              <input type="email" name="email" placeholder="Your email address" required />
+
+              <select name="inquiry" required>
+                <option value="">You are reaching out for</option>
+                <option>Hiring opportunity</option>
+                <option>Freelance / Contract work</option>
+                <option>Project collaboration</option>
+                <option>General inquiry</option>
+              </select>
+
+              <input type="text" name="role" placeholder="SDET / QA Automation / Project details" />
+
+              <textarea name="message" placeholder="Write your message here" required></textarea>
+
+              <input type="hidden" name="_subject" value="New Portfolio Inquiry - Saurabh Yadav" />
+              <input type="hidden" name="_next" value="https://saurabh-21032000.github.io/thank-you.html" />
+
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
           </div>
+
           <div class="feedback-card">
             <h3>Best use cases</h3>
             <p class="muted">Use this form if you want to contact me for full-time roles, contract work, freelance projects, automation consulting, or collaboration.</p>
@@ -999,7 +1049,7 @@
     <section id="contact">
       <div class="container">
         <div class="section-head">
-          <div class="eyebrow">Contact</div>
+          <div class="eyebrow">Contact Details</div>
           <h2>Let’s connect</h2>
           <p>A more polished contact block with direct recruiter-relevant details.</p>
         </div>
