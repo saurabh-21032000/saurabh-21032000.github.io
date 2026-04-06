@@ -1,117 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Saurabh | QA Automation Engineer</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #000;
-      color: #fff;
-    }
+<meta charset="UTF-8">
+<title>Saurabh Yadav | QA Automation Engineer</title>
 
-    .container {
-      display: flex;
-      height: 100vh;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #000;
+  color: white;
+}
 
-    .left {
-      width: 50%;
-      padding: 60px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+  padding: 15px;
+  text-align: right;
+}
 
-    .right {
-      width: 50%;
-      background: linear-gradient(135deg, #1f1f1f, #333);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 80px;
-      color: #ffb400;
-    }
+.nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
 
-    h1 {
-      font-size: 60px;
-      margin: 10px 0;
-    }
+.nav a:hover {
+  color: #ffb400;
+}
 
-    h1 span {
-      color: #ffb400;
-    }
+section {
+  padding: 80px 60px;
+  min-height: 100vh;
+}
 
-    h2 {
-      color: #ccc;
-      margin-top: 10px;
-    }
+h1 span {
+  color: #ffb400;
+}
 
-    p {
-      color: #aaa;
-    }
+.btn {
+  padding: 10px 20px;
+  background: #ffb400;
+  color: black;
+  text-decoration: none;
+  border-radius: 20px;
+}
 
-    .btn {
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: #ffb400;
-      color: #000;
-      border: none;
-      cursor: pointer;
-      font-weight: bold;
-      border-radius: 25px;
-      text-decoration: none;
-    }
-
-    .nav {
-      position: absolute;
-      top: 20px;
-      right: 40px;
-    }
-
-    .nav a {
-      margin-left: 20px;
-      color: white;
-      text-decoration: none;
-    }
-
-    .nav a:hover {
-      color: #ffb400;
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <div class="nav">
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Projects</a>
-  <a href="#">Contact</a>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
 </div>
 
-<div class="container">
-  
-  <div class="left">
-    <p>HELLO 👋</p>
-    <h1>I'm <span>Saurabh</span></h1>
-    <h2>QA Automation Engineer</h2>
-    <p>
-      متخصص in Selenium, Cypress, Playwright, Appium & API Testing.  
-      I build scalable automation frameworks and ensure high-quality software delivery.
-    </p>
+<!-- HOME -->
+<section id="home">
+  <h1>I'm <span>Saurabh Yadav</span></h1>
+  <h2>Automation Engineer — Framework Architect — CI/CD Advocate</h2>
+  <p>India | Open to Remote Opportunities</p>
 
-    <a class="btn" href="https://github.com/saurabh-21032000" target="_blank">
-      VIEW GITHUB
+  <a class="btn" href="https://github.com/saurabh-21032000" target="_blank">GitHub</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h1>About Me</h1>
+  <p>
+    Senior QA Automation Engineer with 5+ years of experience in Web, Mobile, API and AI Testing.
+    Specialized in Selenium, Playwright, Appium frameworks and CI/CD integration.
+  </p>
+
+  <h2>Skills</h2>
+  <ul>
+    <li>Selenium | Playwright | Cypress | Appium</li>
+    <li>Java | JavaScript | TypeScript | SQL</li>
+    <li>Jenkins | GitHub Actions | Azure DevOps</li>
+    <li>Postman | Rest Assured | JMeter</li>
+  </ul>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h1>Projects</h1>
+
+  <h3>Playwright API Framework</h3>
+  <p>Production-ready API automation using TypeScript</p>
+  <a href="https://github.com/saurabh-21032000/playwright-api-automation" target="_blank">View Project</a>
+
+  <h3>Mobile Automation - Appium</h3>
+  <p>Android automation framework using Java</p>
+  <a href="https://github.com/saurabh-21032000/mobile-automation-appium" target="_blank">View Project</a>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h1>Contact</h1>
+
+  <p>Email: saurabhyadav228123@gmail.com</p>
+  <p>Phone: +91 9721208684</p>
+
+  <p>
+    LinkedIn: 
+    <a href="https://www.linkedin.com/in/saurabh-yadav-205107337/" target="_blank">
+      View Profile
     </a>
-  </div>
+  </p>
 
-  <div class="right">
-    QA
-  </div>
-
-</div>
+</section>
 
 </body>
 </html>
