@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saurabh Yadav | Senior QA Automation Engineer</title>
-  <meta name="description" content="Portfolio of Saurabh Yadav, Senior QA Automation Engineer specializing in web, mobile, API, CI/CD, and AI-driven testing." />
+  <title>Saurabh Yadav | Senior QA Automation Engineer | Web, Mobile, API, AI Testing</title>
+  <meta name="description" content="Saurabh Yadav is a Senior QA Automation Engineer with 5+ years of experience in web, mobile, API, CI/CD, and AI-driven testing." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23091524'/%3E%3Cpath d='M20 18h8v28h-8zm16 0h8v28h-8zM18 28h28v8H18z' fill='%23f5b301'/%3E%3C/svg%3E" />
   <style>
     :root {
-      --bg: #07111f;
-      --bg-2: #0b1830;
-      --bg-3: #0e2241;
-      --surface: rgba(255, 255, 255, 0.06);
-      --surface-2: rgba(255, 255, 255, 0.08);
-      --border: rgba(255, 255, 255, 0.12);
-      --text: #f7f9fc;
-      --muted: #aeb8cb;
+      --bg: #06101d;
+      --bg2: #0a1730;
+      --bg3: #0d2342;
+      --surface: rgba(255,255,255,0.06);
+      --surface-strong: rgba(255,255,255,0.09);
+      --border: rgba(255,255,255,0.12);
+      --text: #f5f8fc;
+      --muted: #afbad0;
       --accent: #f5b301;
-      --accent-2: #58d6ff;
-      --success: #77e3b4;
-      --danger: #ff867f;
-      --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
-      --max: 1180px;
+      --accent2: #58d6ff;
+      --success: #79e0b4;
+      --shadow: 0 24px 65px rgba(0,0,0,0.34);
       --radius: 24px;
+      --max: 1180px;
     }
 
     * { box-sizing: border-box; }
@@ -31,10 +31,10 @@
       font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at 10% 10%, rgba(88, 214, 255, 0.15), transparent 26%),
-        radial-gradient(circle at 85% 15%, rgba(245, 179, 1, 0.17), transparent 24%),
-        radial-gradient(circle at 50% 80%, rgba(81, 106, 255, 0.14), transparent 30%),
-        linear-gradient(180deg, #07101c 0%, #09172a 42%, #07111f 100%);
+        radial-gradient(circle at 10% 12%, rgba(88,214,255,0.14), transparent 24%),
+        radial-gradient(circle at 88% 16%, rgba(245,179,1,0.14), transparent 22%),
+        radial-gradient(circle at 50% 84%, rgba(82,98,255,0.14), transparent 26%),
+        linear-gradient(180deg, #07111f 0%, #09172a 45%, #06101d 100%);
       line-height: 1.6;
       overflow-x: hidden;
     }
@@ -44,29 +44,28 @@
       position: fixed;
       inset: 0;
       background-image:
-        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+        linear-gradient(rgba(255,255,255,0.028) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.028) 1px, transparent 1px);
       background-size: 42px 42px;
-      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.15));
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.16));
       pointer-events: none;
-      z-index: -2;
+      z-index: -3;
     }
 
-    .glow {
+    .orb {
       position: fixed;
-      inset: auto;
       width: 320px;
       height: 320px;
       border-radius: 50%;
-      filter: blur(90px);
-      opacity: 0.35;
-      z-index: -1;
+      filter: blur(100px);
+      opacity: 0.3;
+      z-index: -2;
       pointer-events: none;
     }
 
-    .glow.one { top: 90px; left: -60px; background: rgba(88, 214, 255, 0.28); }
-    .glow.two { top: 140px; right: -70px; background: rgba(245, 179, 1, 0.22); }
-    .glow.three { bottom: 40px; left: 25%; background: rgba(93, 100, 255, 0.22); }
+    .orb.one { top: 70px; left: -80px; background: rgba(88,214,255,0.28); }
+    .orb.two { top: 120px; right: -60px; background: rgba(245,179,1,0.24); }
+    .orb.three { bottom: 50px; left: 30%; background: rgba(88,109,255,0.22); }
 
     .container {
       width: min(var(--max), calc(100% - 32px));
@@ -76,9 +75,9 @@
     .navbar {
       position: sticky;
       top: 0;
-      z-index: 99;
+      z-index: 100;
       backdrop-filter: blur(18px);
-      background: rgba(5, 12, 24, 0.7);
+      background: rgba(5,11,23,0.72);
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
@@ -91,7 +90,7 @@
     }
 
     .brand {
-      font-size: 1.1rem;
+      font-size: 1.12rem;
       font-weight: 900;
       letter-spacing: 0.02em;
     }
@@ -100,9 +99,9 @@
 
     .nav-links {
       display: flex;
-      gap: 22px;
-      flex-wrap: wrap;
+      gap: 20px;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     .nav-links a {
@@ -114,23 +113,24 @@
 
     .nav-links a:hover { color: var(--text); }
 
-    .nav-cta {
-      padding: 10px 16px;
+    .nav-links .resume-link {
+      color: var(--text);
+      padding: 10px 14px;
       border-radius: 999px;
       background: rgba(255,255,255,0.06);
       border: 1px solid rgba(255,255,255,0.12);
     }
 
     .hero {
-      padding: 86px 0 44px;
       min-height: 100vh;
       display: flex;
       align-items: center;
+      padding: 86px 0 48px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
+      grid-template-columns: 1.15fr 0.85fr;
       gap: 28px;
       align-items: center;
     }
@@ -145,15 +145,15 @@
       border: 1px solid rgba(255,255,255,0.1);
       color: var(--muted);
       font-size: 0.92rem;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .hero h1 {
       margin: 0;
-      font-size: clamp(2.8rem, 6vw, 5.2rem);
+      font-size: clamp(2.8rem, 6vw, 5.1rem);
       line-height: 1.02;
-      letter-spacing: -0.045em;
-      max-width: 780px;
+      letter-spacing: -0.05em;
+      max-width: 820px;
     }
 
     .hero h1 span {
@@ -162,15 +162,15 @@
     }
 
     .hero h2 {
-      margin: 18px 0 18px;
-      font-size: clamp(1.1rem, 2vw, 1.55rem);
+      margin: 18px 0 16px;
+      font-size: clamp(1.15rem, 2vw, 1.55rem);
+      color: #dae1ee;
       line-height: 1.45;
-      color: #d7deeb;
-      max-width: 820px;
+      max-width: 800px;
     }
 
     .hero p {
-      margin: 0 0 28px;
+      margin: 0 0 26px;
       color: var(--muted);
       max-width: 760px;
       font-size: 1.02rem;
@@ -180,7 +180,7 @@
       display: flex;
       gap: 14px;
       flex-wrap: wrap;
-      margin-bottom: 28px;
+      margin-bottom: 26px;
     }
 
     .btn {
@@ -192,33 +192,23 @@
       border-radius: 16px;
       text-decoration: none;
       font-weight: 800;
-      transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+      transition: transform 0.2s ease, background 0.2s ease, opacity 0.2s ease;
       box-shadow: var(--shadow);
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.98rem;
     }
 
     .btn:hover { transform: translateY(-2px); }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--accent), #ffd66c);
-      color: #111;
-    }
-
-    .btn-secondary {
-      color: var(--text);
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(255,255,255,0.12);
-    }
-
-    .btn-outline {
-      color: var(--accent-2);
-      background: rgba(88,214,255,0.08);
-      border: 1px solid rgba(88,214,255,0.18);
-    }
+    .btn-primary { background: linear-gradient(135deg, var(--accent), #ffd66c); color: #121212; }
+    .btn-secondary { background: rgba(255,255,255,0.07); color: var(--text); border: 1px solid rgba(255,255,255,0.12); }
+    .btn-outline { background: rgba(88,214,255,0.08); color: var(--accent2); border: 1px solid rgba(88,214,255,0.18); }
 
     .hero-points {
       display: flex;
-      gap: 12px;
       flex-wrap: wrap;
+      gap: 12px;
     }
 
     .chip {
@@ -226,9 +216,9 @@
       border-radius: 999px;
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,255,255,0.08);
-      color: #d9e3f1;
-      font-weight: 700;
+      color: #deebf7;
       font-size: 0.92rem;
+      font-weight: 700;
     }
 
     .card {
@@ -236,55 +226,52 @@
       border: 1px solid var(--border);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      backdrop-filter: blur(16px);
+      backdrop-filter: blur(18px);
     }
 
     .hero-card {
       padding: 28px;
-      position: relative;
       overflow: hidden;
+      position: relative;
     }
 
     .hero-card::after {
       content: "";
       position: absolute;
-      right: -50px;
-      top: -50px;
-      width: 190px;
-      height: 190px;
+      width: 210px;
+      height: 210px;
+      right: -58px;
+      top: -58px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(88,214,255,0.22), transparent 70%);
+      background: radial-gradient(circle, rgba(88,214,255,0.2), transparent 70%);
     }
 
     .status {
       display: inline-block;
       padding: 8px 12px;
       border-radius: 999px;
-      background: rgba(119, 227, 180, 0.12);
-      border: 1px solid rgba(119, 227, 180, 0.25);
+      background: rgba(121,224,180,0.12);
+      border: 1px solid rgba(121,224,180,0.24);
       color: var(--success);
-      font-weight: 800;
       font-size: 0.85rem;
+      font-weight: 800;
       margin-bottom: 16px;
     }
 
-    .hero-card h3 {
-      margin: 0 0 12px;
-      font-size: 1.35rem;
-    }
+    .hero-card h3 { margin: 0 0 12px; font-size: 1.35rem; }
 
     .hero-card ul {
       list-style: none;
       padding: 0;
-      margin: 0 0 24px;
+      margin: 0 0 22px;
       display: grid;
       gap: 12px;
     }
 
     .hero-card li {
-      position: relative;
-      padding-left: 18px;
       color: var(--muted);
+      padding-left: 18px;
+      position: relative;
     }
 
     .hero-card li::before {
@@ -309,22 +296,47 @@
 
     .metric strong {
       display: block;
+      margin-bottom: 4px;
       font-size: 1.5rem;
-      color: var(--text);
-      margin-bottom: 3px;
     }
 
     .metric span { color: var(--muted); font-size: 0.92rem; }
 
-    section { padding: 82px 0; }
-
-    .section-head {
-      margin-bottom: 28px;
+    .achievement-strip {
+      margin-top: -10px;
+      margin-bottom: 10px;
     }
 
+    .achievement-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .achievement {
+      padding: 20px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      text-align: left;
+    }
+
+    .achievement strong {
+      display: block;
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 6px;
+      line-height: 1;
+    }
+
+    .achievement span { color: var(--muted); font-weight: 600; }
+
+    section { padding: 82px 0; }
+
+    .section-head { margin-bottom: 28px; }
     .eyebrow {
       display: inline-block;
-      color: var(--accent-2);
+      color: var(--accent2);
       text-transform: uppercase;
       letter-spacing: 0.15em;
       font-size: 0.8rem;
@@ -334,7 +346,7 @@
 
     .section-head h2 {
       margin: 0 0 12px;
-      font-size: clamp(1.95rem, 4vw, 2.8rem);
+      font-size: clamp(2rem, 4vw, 2.8rem);
       line-height: 1.1;
     }
 
@@ -353,8 +365,16 @@
     .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 
-    .panel { padding: 24px; }
-    .panel h3 { margin-top: 0; margin-bottom: 10px; font-size: 1.18rem; }
+    .panel, .project-card, .contact-card, .strength-card, .tool-card, .domain-card, .feedback-card {
+      padding: 24px;
+    }
+
+    .panel h3, .project-card h3, .contact-card h3, .strength-card h3, .tool-card h3, .domain-card h3, .feedback-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+    }
+
     .muted { color: var(--muted); }
 
     .pill-list, .skills-list {
@@ -369,14 +389,14 @@
       border-radius: 999px;
       background: rgba(255,255,255,0.06);
       border: 1px solid rgba(255,255,255,0.08);
-      color: #deebf8;
-      font-weight: 700;
+      color: #e1edf9;
       font-size: 0.92rem;
+      font-weight: 700;
     }
 
     .highlight {
-      border: 1px solid rgba(245, 179, 1, 0.2);
       background: linear-gradient(180deg, rgba(245,179,1,0.08), rgba(255,255,255,0.04));
+      border: 1px solid rgba(245,179,1,0.22);
     }
 
     .timeline {
@@ -400,60 +420,67 @@
       top: 0;
       bottom: 0;
       width: 4px;
-      background: linear-gradient(180deg, var(--accent), var(--accent-2));
+      background: linear-gradient(180deg, var(--accent), var(--accent2));
     }
 
-    .timeline-item h3 { margin: 0 0 6px; }
-    .meta { color: var(--accent); font-weight: 800; margin-bottom: 10px; }
-
-    .timeline-item ul {
-      margin: 0;
-      padding-left: 18px;
-      color: var(--muted);
+    .timeline-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
     }
 
-    .timeline-item li + li { margin-top: 8px; }
+    .meta {
+      color: var(--accent);
+      font-weight: 800;
+    }
 
-    .strength-card {
-      padding: 22px;
-      border-radius: 22px;
+    .tool-row {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .tool-card {
+      text-align: center;
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
     }
 
-    .strength-card h3 { margin: 0 0 10px; font-size: 1.1rem; }
-    .strength-card p { margin: 0; color: var(--muted); }
-
-    .project-card {
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
+    .tool-card strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 6px;
     }
 
-    .project-card h3 { margin: 0; }
+    .project-card, .contact-card, .strength-card, .domain-card, .feedback-card, .panel, .tool-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .project-tag {
+      display: inline-block;
+      width: fit-content;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      color: #dce9f6;
+      font-size: 0.82rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
     .project-card a, .contact-card a {
-      color: var(--accent-2);
+      color: var(--accent2);
       text-decoration: none;
       font-weight: 800;
     }
 
     .project-card a:hover, .contact-card a:hover { text-decoration: underline; }
-
-    .project-tag {
-      display: inline-block;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.06);
-      color: #d7e5f4;
-      font-size: 0.82rem;
-      font-weight: 800;
-      width: fit-content;
-    }
-
-    .resume-section {
-      position: relative;
-    }
 
     .resume-box {
       padding: 28px;
@@ -472,70 +499,75 @@
     .resume-box h3 { margin: 0 0 8px; font-size: 1.45rem; }
     .resume-box p { margin: 0; color: var(--muted); max-width: 700px; }
 
-    .contact-grid {
+    .contact-grid, .feedback-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 22px;
     }
 
-    .contact-card { padding: 24px; }
+    .sticky-resume {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 95;
+    }
+
+    .sticky-resume a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: #121212;
+      background: linear-gradient(135deg, var(--accent), #ffd66c);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+      font-weight: 900;
+    }
 
     footer {
-      padding: 28px 0 42px;
-      color: var(--muted);
       border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 28px 0 44px;
       text-align: center;
+      color: var(--muted);
+    }
+
+    @media (max-width: 1100px) {
+      .tool-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
 
     @media (max-width: 980px) {
-      .hero {
-        min-height: auto;
-        padding-top: 64px;
-      }
-
+      .hero { min-height: auto; padding-top: 64px; }
       .hero-grid,
+      .achievement-grid,
       .grid-2,
       .grid-3,
       .grid-4,
       .contact-grid,
-      .resume-box {
-        grid-template-columns: 1fr;
-      }
+      .feedback-grid,
+      .resume-box { grid-template-columns: 1fr; }
+      .tool-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
 
     @media (max-width: 640px) {
-      .nav-inner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .nav-links {
-        gap: 14px;
-      }
-
-      .panel,
-      .hero-card,
-      .timeline-item,
-      .contact-card,
-      .resume-box,
-      .project-card {
+      .nav-inner { flex-direction: column; align-items: flex-start; }
+      .nav-links { gap: 14px; }
+      .hero-actions .btn,
+      .resume-box .btn { width: 100%; }
+      .metric-grid,
+      .tool-row { grid-template-columns: 1fr; }
+      .panel, .project-card, .contact-card, .strength-card, .tool-card, .domain-card, .feedback-card, .hero-card, .timeline-item, .resume-box {
         padding: 20px;
       }
-
-      .metric-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-actions .btn {
-        width: 100%;
-      }
+      .sticky-resume { right: 12px; bottom: 12px; }
     }
   </style>
 </head>
 <body>
-  <div class="glow one"></div>
-  <div class="glow two"></div>
-  <div class="glow three"></div>
+  <div class="orb one"></div>
+  <div class="orb two"></div>
+  <div class="orb three"></div>
 
   <header class="navbar">
     <div class="container nav-inner">
@@ -546,8 +578,9 @@
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#strengths">Strengths</a>
-        <a href="#resume" class="nav-cta">Resume</a>
+        <a href="#hire-me">Why Hire Me</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#resume" class="resume-link">Resume</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -557,33 +590,33 @@
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div>
-          <div class="badge">Senior QA Automation Engineer • Framework Architect • CI/CD Quality Advocate</div>
-          <h1>Building <span>scalable quality systems</span> for web, mobile, API, and AI-driven products.</h1>
-          <h2>Saurabh Yadav helps engineering teams ship faster with stronger automation frameworks, reliable CI pipelines, and release-ready validation strategies.</h2>
+          <div class="badge">Senior QA Automation Engineer • 5+ Years • Web, Mobile, API, AI Testing</div>
+          <h1>I build <span>scalable automation systems</span> that reduce regression effort and improve release confidence.</h1>
+          <h2>Senior QA Automation Engineer focused on framework architecture, CI/CD quality gates, cross-platform validation, and recruiter-ready execution for modern engineering teams.</h2>
           <p>
-            With 5+ years of experience, I specialize in Selenium, Playwright, Appium, API automation, shift-left testing, and quality engineering systems that reduce regression effort, improve release confidence, and scale across distributed Agile teams.
+            I work across Selenium, Playwright, Appium, API automation, AI output validation, and release quality strategy. My focus is not just test execution, but building reliable quality systems that help teams ship faster with stronger confidence.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:saurabhyadav228123@gmail.com">Hire Me</a>
-            <a class="btn btn-secondary" href="./Saurabh_Yadav_Quality_Automation_Engineer.pdf" download="Saurabh_Yadav_Quality_Automation_Engineer.pdf">Download Resume</a>
+            <a class="btn btn-primary" href="mailto:saurabhyadav228123@gmail.com">Contact Me</a>
+            <a class="btn btn-secondary" href="Saurabh_Yadav_Quality_Automation_Engineer.pdf" download>Download Resume</a>
             <a class="btn btn-outline" href="https://github.com/saurabh-21032000" target="_blank" rel="noreferrer">View GitHub</a>
           </div>
           <div class="hero-points">
-            <span class="chip">5+ Years Experience</span>
-            <span class="chip">85%+ Automation Coverage</span>
-            <span class="chip">70% Faster Regression</span>
             <span class="chip">Immediate Joiner</span>
+            <span class="chip">Global Remote Ready</span>
+            <span class="chip">Framework Ownership</span>
+            <span class="chip">Release Quality Mindset</span>
           </div>
         </div>
 
         <aside class="card hero-card">
-          <div class="status">Open to Global Remote Opportunities</div>
-          <h3>Impact Snapshot</h3>
+          <div class="status">Open to Senior QA Automation / SDET Roles</div>
+          <h3>Core impact</h3>
           <ul>
-            <li>Architected automation frameworks for web, mobile, and API testing ecosystems</li>
-            <li>Integrated test execution into CI/CD pipelines using GitHub Actions, Jenkins, and Azure DevOps</li>
-            <li>Validated AI-driven products for intent accuracy, context consistency, and response reliability</li>
-            <li>Applied shift-left and risk-based testing to catch critical issues earlier in the delivery cycle</li>
+            <li>Built and maintained scalable automation frameworks for web, mobile, and API systems</li>
+            <li>Integrated automated validation into CI/CD pipelines using GitHub Actions, Jenkins, and Azure DevOps</li>
+            <li>Applied shift-left testing and risk-based testing to catch issues earlier in delivery</li>
+            <li>Worked on AI-driven product validation for response quality, intent, and fallback consistency</li>
           </ul>
           <div class="metric-grid">
             <div class="metric">
@@ -599,11 +632,34 @@
               <span>Early critical defects caught</span>
             </div>
             <div class="metric">
-              <strong>Multi-Stack</strong>
-              <span>Web, mobile, API, AI validation</span>
+              <strong>85%+</strong>
+              <span>Automation coverage achieved</span>
             </div>
           </div>
         </aside>
+      </div>
+    </section>
+
+    <section class="achievement-strip">
+      <div class="container">
+        <div class="achievement-grid">
+          <div class="achievement">
+            <strong>85%+</strong>
+            <span>Automation coverage delivered across core workflows</span>
+          </div>
+          <div class="achievement">
+            <strong>70%</strong>
+            <span>Regression effort reduced through pipeline integration</span>
+          </div>
+          <div class="achievement">
+            <strong>150+</strong>
+            <span>Endpoints covered with structured API automation</span>
+          </div>
+          <div class="achievement">
+            <strong>30%</strong>
+            <span>Production defects reduced through stronger validation</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -612,27 +668,27 @@
         <div class="section-head">
           <div class="eyebrow">About</div>
           <h2>Professional Summary</h2>
-          <p>Senior QA Automation Engineer with proven experience in designing scalable automation frameworks using Selenium, Playwright, and Appium, with strong CI/CD integration and cross-platform validation expertise.</p>
+          <p>Senior QA Automation Engineer with 5+ years of experience in web, mobile, API, and AI-driven application testing. Specialized in scalable automation frameworks, CI/CD integration, shift-left testing, and cross-platform validation.</p>
         </div>
         <div class="grid-2">
-          <div class="card panel highlight">
+          <div class="panel highlight">
             <h3>What I do best</h3>
-            <p class="muted">I build maintainable automation architecture, accelerate regression testing, improve release stability, and bring test reliability into the core of engineering workflows.</p>
+            <p class="muted">I design maintainable automation architecture, accelerate regression cycles, improve release stability, and make automated quality systems part of real engineering delivery.</p>
             <div class="pill-list">
-              <span class="pill">Framework Architecture</span>
-              <span class="pill">Release Quality</span>
-              <span class="pill">Cross-Platform Testing</span>
-              <span class="pill">Shift-Left Strategy</span>
+              <span class="pill">Framework Design</span>
+              <span class="pill">Automation Strategy</span>
+              <span class="pill">Shift-Left Testing</span>
+              <span class="pill">CI Quality Gates</span>
             </div>
           </div>
-          <div class="card panel">
-            <h3>Career focus</h3>
-            <p class="muted">Open to SDET, Senior QA Automation, and quality engineering roles where automation maturity, CI confidence, and modern testing strategy directly impact product reliability.</p>
+          <div class="panel">
+            <h3>Career direction</h3>
+            <p class="muted">Open to roles where I can drive quality engineering maturity, framework ownership, cross-platform automation, and stronger release confidence across distributed product teams.</p>
             <div class="pill-list">
+              <span class="pill">Senior QA Automation</span>
+              <span class="pill">SDET</span>
               <span class="pill">Global Remote</span>
               <span class="pill">Immediate Joiner</span>
-              <span class="pill">Agile Teams</span>
-              <span class="pill">High Ownership</span>
             </div>
           </div>
         </div>
@@ -644,46 +700,69 @@
         <div class="section-head">
           <div class="eyebrow">Skills</div>
           <h2>Technical Skills</h2>
-          <p>Automation tooling, programming stack, and quality systems used to build reliable modern testing workflows.</p>
+          <p>Grouped by how recruiters and engineering leads usually evaluate senior quality engineering capability.</p>
         </div>
         <div class="grid-3">
-          <div class="card panel">
-            <h3>Testing & Automation</h3>
+          <div class="panel">
+            <h3>Test Automation</h3>
             <div class="skills-list">
               <span class="pill">Selenium WebDriver</span>
               <span class="pill">Playwright</span>
               <span class="pill">Cypress</span>
               <span class="pill">Appium</span>
               <span class="pill">TestNG</span>
-              <span class="pill">Accessibility Testing</span>
             </div>
           </div>
-          <div class="card panel">
-            <h3>API, Performance & Languages</h3>
+          <div class="panel">
+            <h3>API & Performance</h3>
             <div class="skills-list">
               <span class="pill">Postman</span>
               <span class="pill">Rest Assured</span>
               <span class="pill">Swagger</span>
               <span class="pill">JMeter</span>
+              <span class="pill">Integration Testing</span>
+            </div>
+          </div>
+          <div class="panel">
+            <h3>Programming & Data</h3>
+            <div class="skills-list">
               <span class="pill">Java</span>
               <span class="pill">JavaScript</span>
               <span class="pill">TypeScript</span>
               <span class="pill">SQL</span>
+              <span class="pill">MySQL</span>
             </div>
           </div>
-          <div class="card panel">
-            <h3>DevOps & Platforms</h3>
+          <div class="panel">
+            <h3>DevOps / CI-CD</h3>
             <div class="skills-list">
               <span class="pill">GitHub Actions</span>
               <span class="pill">Jenkins</span>
               <span class="pill">Azure DevOps</span>
               <span class="pill">Maven</span>
               <span class="pill">Git</span>
-              <span class="pill">BrowserStack</span>
               <span class="pill">Docker</span>
-              <span class="pill">Jira</span>
-              <span class="pill">TestRail</span>
-              <span class="pill">Zephyr</span>
+            </div>
+          </div>
+          <div class="panel">
+            <h3>Testing Types</h3>
+            <div class="skills-list">
+              <span class="pill">Functional</span>
+              <span class="pill">Regression</span>
+              <span class="pill">Smoke</span>
+              <span class="pill">Sanity</span>
+              <span class="pill">UAT</span>
+              <span class="pill">Accessibility</span>
+            </div>
+          </div>
+          <div class="panel">
+            <h3>AI Testing</h3>
+            <div class="skills-list">
+              <span class="pill">Intent Validation</span>
+              <span class="pill">Response Consistency</span>
+              <span class="pill">Fallback Handling</span>
+              <span class="pill">Regression Impact Analysis</span>
+              <span class="pill">Output Validation</span>
             </div>
           </div>
         </div>
@@ -695,21 +774,35 @@
         <div class="section-head">
           <div class="eyebrow">Experience</div>
           <h2>Professional Experience</h2>
-          <p>Hands-on quality engineering work focused on framework design, automation scale, API validation, and release acceleration.</p>
+          <p>A cleaner timeline structure with role, company, duration, impact, and stack emphasis.</p>
         </div>
         <div class="timeline">
           <div class="timeline-item">
-            <h3>Software Test Engineer</h3>
-            <div class="meta">EclipticInsight Innovation Pvt. Ltd. • 2021 – Present</div>
+            <div class="timeline-top">
+              <div>
+                <h3>Software Test Engineer</h3>
+                <div class="meta">EclipticInsight Innovation Pvt. Ltd.</div>
+              </div>
+              <div class="meta">2021 – Present</div>
+            </div>
+            <p class="muted">Owning automation architecture, API validation, release-quality acceleration, and CI-driven automation workflows across web, mobile, and AI-influenced products.</p>
             <ul>
               <li>Architected and maintained scalable automation frameworks for web, mobile, and API systems.</li>
-              <li>Designed layered automation architecture using Page Object Model and Service Object Model.</li>
-              <li>Increased automation coverage from 40% to 85%+, reducing production defects by 30%.</li>
-              <li>Reduced regression testing cycle by 70% through CI/CD pipeline integration.</li>
-              <li>Built structured API automation coverage validating 150+ endpoints through reusable service components.</li>
-              <li>Implemented shift-left testing strategy, identifying 60% of critical defects during earlier integration stages.</li>
-              <li>Maintained clean Git workflows with pull requests, CI checks, and branch-based collaboration.</li>
+              <li>Designed layered framework architecture using Page Object Model and Service Object Model.</li>
+              <li>Increased automation coverage from 40% to 85%+ while reducing production defects by 30%.</li>
+              <li>Reduced regression cycle by 70% through CI/CD integration and automation-first execution.</li>
+              <li>Built API automation coverage for 150+ endpoints through reusable service abstractions.</li>
+              <li>Implemented shift-left testing, identifying 60% of critical defects in earlier integration stages.</li>
+              <li>Maintained clean Git workflows with pull requests, branch-based development, and CI checks.</li>
             </ul>
+            <div class="pill-list">
+              <span class="pill">Selenium</span>
+              <span class="pill">Playwright</span>
+              <span class="pill">Appium</span>
+              <span class="pill">Rest Assured</span>
+              <span class="pill">GitHub Actions</span>
+              <span class="pill">Jenkins</span>
+            </div>
           </div>
         </div>
       </div>
@@ -719,88 +812,185 @@
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">Projects</div>
-          <h2>Key Projects</h2>
-          <p>Selected work across e-commerce, fintech, mobile banking, and AI-driven products, plus personal automation frameworks.</p>
+          <h2>Real Project Proof</h2>
+          <p>Each project is framed with domain, delivery, impact, and stack to make the portfolio more convincing to recruiters.</p>
         </div>
         <div class="grid-2">
-          <div class="card project-card">
-            <span class="project-tag">Web + API</span>
+          <div class="project-card">
+            <span class="project-tag">E-commerce • Web + API</span>
             <h3>E-Commerce Platform Automation</h3>
-            <p class="muted">Designed Playwright automation for order lifecycle, cart, checkout, payment validation, and backend synchronization flows.</p>
+            <p class="muted">Designed Playwright automation framework for order lifecycle, cart, checkout, and payment validation. Added API validations for pricing, inventory, and order synchronization.</p>
+            <p class="muted"><strong>Impact:</strong> stronger checkout reliability and repeatable regression validation.</p>
+            <p class="muted"><strong>Stack:</strong> Playwright, TypeScript, API validation, CI integration</p>
           </div>
-          <div class="card project-card">
+          <div class="project-card">
             <span class="project-tag">Fintech</span>
             <h3>Snap – Loan Management Platform</h3>
-            <p class="muted">Automated loan processing workflows and KYC validation APIs, significantly reducing manual execution effort.</p>
+            <p class="muted">Automated loan processing workflows and KYC validation APIs for a fintech product with critical data and compliance flows.</p>
+            <p class="muted"><strong>Impact:</strong> reduced manual execution effort by 60%.</p>
+            <p class="muted"><strong>Stack:</strong> API automation, structured validation, CI pipelines</p>
           </div>
-          <div class="card project-card">
-            <span class="project-tag">Mobile Banking</span>
-            <h3>UPI & Wallet Application</h3>
-            <p class="muted">Built Android Appium suites for UPI payments, wallet transactions, QR flows, and device-level validation scenarios.</p>
+          <div class="project-card">
+            <span class="project-tag">Banking • Mobile</span>
+            <h3>Mobile Banking Application</h3>
+            <p class="muted">Built Android automation suites using Appium across multiple device configurations for UPI, wallet, QR, and transaction validation flows.</p>
+            <p class="muted"><strong>Impact:</strong> improved defect detection rate by 30%.</p>
+            <p class="muted"><strong>Stack:</strong> Appium, Java, Android automation</p>
           </div>
-          <div class="card project-card">
+          <div class="project-card">
             <span class="project-tag">AI Validation</span>
-            <h3>AI-Powered Support Chatbot</h3>
-            <p class="muted">Created AI validation strategy for intent accuracy, context relevance, fallback handling, and model-update regression consistency.</p>
+            <h3>AI-Powered Customer Support Chatbot</h3>
+            <p class="muted">Designed validation strategy for intent accuracy, context relevance, fallback handling, and model-update regression consistency.</p>
+            <p class="muted"><strong>Impact:</strong> stronger response reliability after model changes.</p>
+            <p class="muted"><strong>Stack:</strong> AI output validation, regression strategy, quality analysis</p>
           </div>
-          <div class="card project-card">
+          <div class="project-card">
             <span class="project-tag">Personal Framework</span>
             <h3>Playwright API Automation Framework</h3>
-            <p class="muted">Production-ready API automation framework with reusable service abstraction, structured logging, and CI integration.</p>
+            <p class="muted">Built a production-ready API automation framework with layered service abstraction, structured logging, configuration management, and data-driven testing.</p>
+            <p class="muted"><strong>Stack:</strong> Playwright, TypeScript, GitHub Actions</p>
             <a href="https://github.com/saurabh-21032000/playwright-api-automation" target="_blank" rel="noreferrer">Open Repository</a>
           </div>
-          <div class="card project-card">
+          <div class="project-card">
             <span class="project-tag">Personal Framework</span>
             <h3>Mobile Automation Framework – Appium</h3>
-            <p class="muted">Android automation framework using Java and Appium with scalable Page Object Model and CI-compatible execution design.</p>
+            <p class="muted">Developed Android automation framework using Appium and Java with scalable POM structure, reusable utilities, and CI-compatible execution.</p>
+            <p class="muted"><strong>Stack:</strong> Appium, Java, Page Object Model, CI integration</p>
             <a href="https://github.com/saurabh-21032000/mobile-automation-appium" target="_blank" rel="noreferrer">Open Repository</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="strengths">
+    <section id="domains">
       <div class="container">
         <div class="section-head">
-          <div class="eyebrow">Strengths</div>
-          <h2>Strategic QA Capabilities</h2>
-          <p>A dedicated premium section to make the portfolio look stronger and position your profile beyond basic testing execution.</p>
+          <div class="eyebrow">Domains</div>
+          <h2>What I’ve worked on</h2>
+          <p>A quick domain snapshot that makes the profile feel broader and more commercially relevant.</p>
         </div>
         <div class="grid-4">
-          <div class="strength-card">
-            <h3>Shift-Left Testing</h3>
-            <p>Catch critical defects early through integration-aware validation and earlier test strategy involvement.</p>
+          <div class="domain-card">
+            <h3>E-commerce</h3>
+            <p class="muted">Cart, checkout, pricing, payment, order lifecycle, and synchronization flows.</p>
           </div>
-          <div class="strength-card">
-            <h3>CI/CD Quality Gates</h3>
-            <p>Bring repeatable automated checks directly into delivery pipelines for faster and safer releases.</p>
+          <div class="domain-card">
+            <h3>Fintech</h3>
+            <p class="muted">Loan workflows, KYC validation, structured APIs, and business-critical data quality.</p>
           </div>
-          <div class="strength-card">
-            <h3>Framework Architecture</h3>
-            <p>Design modular, maintainable automation systems that scale with product complexity and team growth.</p>
+          <div class="domain-card">
+            <h3>Banking & Payments</h3>
+            <p class="muted">UPI, wallet transactions, QR validation, and mobile payment reliability scenarios.</p>
           </div>
-          <div class="strength-card">
-            <h3>Cross-Platform Validation</h3>
-            <p>Validate web, mobile, API, and AI-driven products together with strong end-to-end quality coverage.</p>
+          <div class="domain-card">
+            <h3>AI Products</h3>
+            <p class="muted">Intent quality, response consistency, fallback handling, and regression after updates.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="resume" class="resume-section">
+    <section id="tools-proof">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Tools</div>
+          <h2>Recruiter confidence stack</h2>
+          <p>A clean tools section that acts like a capability strip for hiring managers scanning the site quickly.</p>
+        </div>
+        <div class="tool-row">
+          <div class="tool-card"><strong>Selenium</strong><span class="muted">Web automation</span></div>
+          <div class="tool-card"><strong>Playwright</strong><span class="muted">Modern framework</span></div>
+          <div class="tool-card"><strong>Appium</strong><span class="muted">Mobile automation</span></div>
+          <div class="tool-card"><strong>Rest Assured</strong><span class="muted">API testing</span></div>
+          <div class="tool-card"><strong>GitHub Actions</strong><span class="muted">CI automation</span></div>
+          <div class="tool-card"><strong>Jenkins</strong><span class="muted">Pipeline execution</span></div>
+          <div class="tool-card"><strong>Azure DevOps</strong><span class="muted">Release integration</span></div>
+          <div class="tool-card"><strong>BrowserStack</strong><span class="muted">Cross-platform runs</span></div>
+          <div class="tool-card"><strong>Docker</strong><span class="muted">Execution environment</span></div>
+          <div class="tool-card"><strong>JMeter</strong><span class="muted">Performance testing</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hire-me">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Why Hire Me</div>
+          <h2>Why teams hire me</h2>
+          <p>A recruiter-focused section that positions the profile beyond a standard tester resume.</p>
+        </div>
+        <div class="grid-4">
+          <div class="strength-card">
+            <h3>Framework ownership</h3>
+            <p class="muted">I do not just write scripts. I build maintainable automation systems that teams can scale with confidence.</p>
+          </div>
+          <div class="strength-card">
+            <h3>CI/CD integration</h3>
+            <p class="muted">I connect quality directly with pipelines so automation becomes part of engineering delivery, not an afterthought.</p>
+          </div>
+          <div class="strength-card">
+            <h3>Cross-platform validation</h3>
+            <p class="muted">I work across web, mobile, API, and AI-driven products with structured validation coverage.</p>
+          </div>
+          <div class="strength-card">
+            <h3>Release-quality mindset</h3>
+            <p class="muted">My focus is business-critical reliability, defect prevention, and confidence before release, not just pass/fail execution.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume">
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">Resume</div>
-          <h2>Download My Resume</h2>
-          <p>Your site can directly offer recruiters a downloadable PDF version of your resume from the hero section and this dedicated resume block.</p>
+          <h2>Download my resume</h2>
+          <p>Recruiters can directly download the latest PDF version from the site. Keep the uploaded file name exactly aligned with the code link.</p>
         </div>
         <div class="resume-box">
           <div>
-            <h3>One-click recruiter-ready resume download</h3>
-            <p>Place your resume PDF in the same GitHub repository root and keep the file name exactly as <strong>Saurabh_Yadav_Quality_Automation_Engineer.pdf</strong>. The download buttons on this site will start working immediately after deployment.</p>
+            <h3>One-click recruiter-ready resume access</h3>
+            <p>The site is currently linked to <strong>Saurabh_Yadav_Quality_Automation_Engineer.pdf</strong>. If you rename the file later, update the button link in the HTML as well.</p>
           </div>
           <div>
-            <a class="btn btn-primary" href="./Saurabh_Yadav_Quality_Automation_Engineer.pdf" download="Saurabh_Yadav_Quality_Automation_Engineer.pdf">Download Resume PDF</a>
+            <a class="btn btn-primary" href="Saurabh_Yadav_Quality_Automation_Engineer.pdf" download>Download Resume PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="feedback">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Feedback</div>
+          <h2>Contact / Hiring Form</h2>
+          <p>For fastest response, use this form instead of email.</p>
+        </div>
+        <div class="feedback-grid">
+          <div class="feedback-card">
+            <h3>Work With Me</h3>
+            <p class="muted">Hiring, freelance, collaboration, or general inquiry.</p>
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSeVqzirCMRdV4phe3VT_4nw0LO0JA_4OCnA9gKp9ypBHBvhhA/viewform?embedded=true"
+              width="100%"
+              height="720"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              style="border-radius: 24px; background: #ffffff; border: 1px solid rgba(255,255,255,0.08);">
+              Loading…
+            </iframe>
+          </div>
+          <div class="feedback-card">
+            <h3>Best use cases</h3>
+            <p class="muted">Use this form if you want to contact me for full-time roles, contract work, freelance projects, automation consulting, or collaboration.</p>
+            <div class="pill-list">
+              <span class="pill">Hiring Opportunity</span>
+              <span class="pill">Freelance Work</span>
+              <span class="pill">Project Collaboration</span>
+              <span class="pill">General Inquiry</span>
+            </div>
+            <p class="muted" style="margin-top: 18px;">Direct email is also available below if needed.</p>
           </div>
         </div>
       </div>
@@ -811,29 +1001,41 @@
         <div class="section-head">
           <div class="eyebrow">Contact</div>
           <h2>Let’s connect</h2>
-          <p>Open to Senior QA Automation, SDET, and quality engineering opportunities across product teams and global remote roles.</p>
+          <p>A more polished contact block with direct recruiter-relevant details.</p>
         </div>
         <div class="contact-grid">
-          <div class="card contact-card">
-            <h3>Contact Details</h3>
+          <div class="contact-card">
+            <h3>Contact details</h3>
             <p class="muted">Email: <a href="mailto:saurabhyadav228123@gmail.com">saurabhyadav228123@gmail.com</a></p>
             <p class="muted">Phone: <a href="tel:+919721208684">+91 97212 08684</a></p>
             <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/saurabh-yadav-205107337/" target="_blank" rel="noreferrer">View LinkedIn Profile</a></p>
             <p class="muted">GitHub: <a href="https://github.com/saurabh-21032000" target="_blank" rel="noreferrer">View GitHub Profile</a></p>
+            <p class="muted">Location: India</p>
+            <p class="muted">Open to: Global Remote Opportunities</p>
           </div>
-          <div class="card contact-card">
-            <h3>Education & Availability</h3>
+          <div class="contact-card">
+            <h3>Education & availability</h3>
             <p class="muted"><strong>Bachelor of Computer Applications (BCA)</strong><br>Dr. Ram Manohar Lohia Avadh University – 2021</p>
-            <p class="muted"><strong>Current Status:</strong> Immediate Joiner</p>
-            <p class="muted"><strong>Preferred Roles:</strong> Global Remote SDET / Senior QA Automation / Quality Engineering roles</p>
+            <p class="muted"><strong>Status:</strong> Immediate Joiner</p>
+            <p class="muted"><strong>Preferred Roles:</strong> SDET, Senior QA Automation Engineer, Quality Engineering roles</p>
+            <div class="hero-actions" style="margin-top:16px; margin-bottom:0;">
+              <a class="btn btn-primary" href="mailto:saurabhyadav228123@gmail.com">Email Me</a>
+              <a class="btn btn-secondary" href="Saurabh_Yadav_Quality_Automation_Engineer.pdf" download>Get Resume</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <div class="sticky-resume">
+    <a href="Saurabh_Yadav_Quality_Automation_Engineer.pdf" download>Download Resume</a>
+  </div>
+
   <footer>
-    <div class="container">© 2026 Saurabh Yadav • Senior QA Automation Engineer • Built for premium professional positioning</div>
+    <div class="container">
+      Built by Saurabh Yadav for premium professional positioning • Email: saurabhyadav228123@gmail.com • GitHub and LinkedIn linked above
+    </div>
   </footer>
 </body>
 </html>
