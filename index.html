@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saurabh Yadav | Senior QA Automation Engineer | Web, Mobile, API, AI Testing</title>
-  <meta name="description" content="Saurabh Yadav is a Senior QA Automation Engineer with 5+ years of experience in web, mobile, API, CI/CD, and AI-driven testing." />
+  <title>Saurabh Yadav | Senior QA Automation Engineer</title>
+  <meta name="description" content="Senior QA Automation Engineer with 5+ years of experience in Web, Mobile, API, Manual, DB, and AI-driven testing." />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23091524'/%3E%3Cpath d='M20 18h8v28h-8zm16 0h8v28h-8zM18 28h28v8H18z' fill='%23f5b301'/%3E%3C/svg%3E" />
   <style>
     :root {
@@ -151,7 +151,7 @@
 
     .hero h1 {
       margin: 0;
-      font-size: clamp(2.8rem, 6vw, 5.1rem);
+      font-size: clamp(2.8rem, 6vw, 5rem);
       line-height: 1.02;
       letter-spacing: -0.05em;
       max-width: 820px;
@@ -164,10 +164,10 @@
 
     .hero h2 {
       margin: 18px 0 16px;
-      font-size: clamp(1.15rem, 2vw, 1.55rem);
+      font-size: clamp(1.12rem, 2vw, 1.52rem);
       color: #dae1ee;
       line-height: 1.45;
-      max-width: 800px;
+      max-width: 820px;
     }
 
     .hero p {
@@ -193,7 +193,7 @@
       border-radius: 16px;
       text-decoration: none;
       font-weight: 800;
-      transition: transform 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+      transition: transform 0.25s ease, background 0.25s ease, opacity 0.25s ease, box-shadow 0.25s ease;
       box-shadow: var(--shadow);
       border: none;
       cursor: pointer;
@@ -201,7 +201,11 @@
       font-size: 0.98rem;
     }
 
-    .btn:hover { transform: translateY(-2px); }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(245,179,1,0.15);
+    }
+
     .btn-primary { background: linear-gradient(135deg, var(--accent), #ffd66c); color: #121212; }
     .btn-secondary { background: rgba(255,255,255,0.07); color: var(--text); border: 1px solid rgba(255,255,255,0.12); }
     .btn-outline { background: rgba(88,214,255,0.08); color: var(--accent2); border: 1px solid rgba(88,214,255,0.18); }
@@ -354,7 +358,7 @@
     .section-head p {
       margin: 0;
       color: var(--muted);
-      max-width: 760px;
+      max-width: 780px;
     }
 
     .grid-2, .grid-3, .grid-4 {
@@ -366,11 +370,11 @@
     .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 
-    .panel, .project-card, .contact-card, .strength-card, .tool-card, .domain-card, .feedback-card {
+    .panel, .project-card, .contact-card, .strength-card, .tool-card, .domain-card, .feedback-card, .pattern-card, .deliver-card {
       padding: 24px;
     }
 
-    .panel h3, .project-card h3, .contact-card h3, .strength-card h3, .tool-card h3, .domain-card h3, .feedback-card h3 {
+    .panel h3, .project-card h3, .contact-card h3, .strength-card h3, .tool-card h3, .domain-card h3, .feedback-card h3, .pattern-card h3, .deliver-card h3 {
       margin-top: 0;
       margin-bottom: 10px;
       font-size: 1.15rem;
@@ -456,11 +460,18 @@
       margin-bottom: 6px;
     }
 
-    .project-card, .contact-card, .strength-card, .domain-card, .feedback-card, .panel, .tool-card {
+    .project-card, .contact-card, .strength-card, .domain-card, .feedback-card, .panel, .tool-card, .pattern-card, .deliver-card {
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,255,255,0.09);
       border-radius: 24px;
       box-shadow: var(--shadow);
+      transition: 0.25s ease;
+    }
+
+    .project-card:hover, .contact-card:hover, .strength-card:hover, .domain-card:hover, .panel:hover, .tool-card:hover, .pattern-card:hover, .deliver-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(245,179,1,0.35);
+      box-shadow: 0 10px 30px rgba(245,179,1,0.12);
     }
 
     .project-tag {
@@ -592,7 +603,7 @@
       .feedback-form .btn { width: 100%; }
       .metric-grid,
       .tool-row { grid-template-columns: 1fr; }
-      .panel, .project-card, .contact-card, .strength-card, .tool-card, .domain-card, .feedback-card, .hero-card, .timeline-item, .resume-box {
+      .panel, .project-card, .contact-card, .strength-card, .tool-card, .domain-card, .feedback-card, .hero-card, .timeline-item, .resume-box, .pattern-card, .deliver-card {
         padding: 20px;
       }
       .sticky-resume { right: 12px; bottom: 12px; }
@@ -611,12 +622,12 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#architecture">Architecture</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#hire-me">Why Hire Me</a>
         <a href="#feedback">Contact</a>
         <a href="#resume" class="resume-link">Resume</a>
-        <a href="#contact">Details</a>
       </nav>
     </div>
   </header>
@@ -625,11 +636,11 @@
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div>
-          <div class="badge">Senior QA Automation Engineer • 5+ Years • Web, Mobile, API, AI Testing</div>
-          <h1>I build <span>scalable automation systems</span> that reduce regression effort and improve release confidence.</h1>
-          <h2>Senior QA Automation Engineer focused on framework architecture, CI/CD quality gates, cross-platform validation, and recruiter-ready execution for modern engineering teams.</h2>
+          <div class="badge">Senior QA Automation Engineer • 5+ Years • Web, Mobile, API, Manual, DB, AI Testing</div>
+          <h1>Senior QA Automation Engineer building <span>scalable test systems</span> and release confidence.</h1>
+          <h2>5+ years of experience across Web, Mobile, API, Manual, and AI-driven testing with strong expertise in automation frameworks, CI/CD integration, design patterns, and cross-platform validation.</h2>
           <p>
-            I work across Selenium, Playwright, Appium, API automation, AI output validation, and release quality strategy. My focus is not just test execution, but building reliable quality systems that help teams ship faster with stronger confidence.
+            I focus on building scalable automation systems, reducing regression cycles, improving release stability, and helping engineering teams ship faster with confidence. My work spans automation architecture, API validation, manual testing strategy, DB checks, and quality engineering at scale.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="mailto:saurabhyadav228123@gmail.com">Contact Me</a>
@@ -637,38 +648,38 @@
             <a class="btn btn-outline" href="https://github.com/saurabh-21032000" target="_blank" rel="noreferrer">View GitHub</a>
           </div>
           <div class="hero-points">
+            <span class="chip">500+ API Endpoints Tested</span>
+            <span class="chip">85%+ Automation Coverage</span>
+            <span class="chip">70% Faster Regression Cycles</span>
             <span class="chip">Immediate Joiner</span>
-            <span class="chip">Global Remote Ready</span>
-            <span class="chip">Framework Ownership</span>
-            <span class="chip">Release Quality Mindset</span>
           </div>
         </div>
 
         <aside class="card hero-card">
           <div class="status">Open to Senior QA Automation / SDET Roles</div>
-          <h3>Core impact</h3>
+          <h3>Trusted to improve release quality at scale</h3>
           <ul>
-            <li>Built and maintained scalable automation frameworks for web, mobile, and API systems</li>
-            <li>Integrated automated validation into CI/CD pipelines using GitHub Actions, Jenkins, and Azure DevOps</li>
-            <li>Applied shift-left testing and risk-based testing to catch issues earlier in delivery</li>
-            <li>Worked on AI-driven product validation for response quality, intent, and fallback consistency</li>
+            <li>Built scalable automation frameworks for web, mobile, API, and hybrid quality workflows</li>
+            <li>Integrated validation into CI/CD pipelines using GitHub Actions, Jenkins, and Azure DevOps</li>
+            <li>Worked across automation, manual testing, DB validation, and AI-driven product checks</li>
+            <li>Focused on release confidence, defect prevention, and maintainable framework design</li>
           </ul>
           <div class="metric-grid">
             <div class="metric">
-              <strong>150+</strong>
-              <span>API endpoints validated</span>
-            </div>
-            <div class="metric">
-              <strong>30%</strong>
-              <span>Production defects reduced</span>
-            </div>
-            <div class="metric">
-              <strong>60%</strong>
-              <span>Early critical defects caught</span>
+              <strong>500+</strong>
+              <span>API endpoints tested</span>
             </div>
             <div class="metric">
               <strong>85%+</strong>
               <span>Automation coverage achieved</span>
+            </div>
+            <div class="metric">
+              <strong>70%</strong>
+              <span>Regression effort reduced</span>
+            </div>
+            <div class="metric">
+              <strong>30%</strong>
+              <span>Production defects reduced</span>
             </div>
           </div>
         </aside>
@@ -679,16 +690,16 @@
       <div class="container">
         <div class="achievement-grid">
           <div class="achievement">
+            <strong>500+</strong>
+            <span>API endpoints tested with reusable validation coverage</span>
+          </div>
+          <div class="achievement">
             <strong>85%+</strong>
             <span>Automation coverage delivered across core workflows</span>
           </div>
           <div class="achievement">
             <strong>70%</strong>
-            <span>Regression effort reduced through pipeline integration</span>
-          </div>
-          <div class="achievement">
-            <strong>150+</strong>
-            <span>Endpoints covered with structured API automation</span>
+            <span>Regression effort reduced through CI/CD integration</span>
           </div>
           <div class="achievement">
             <strong>30%</strong>
@@ -703,22 +714,22 @@
         <div class="section-head">
           <div class="eyebrow">About</div>
           <h2>Professional Summary</h2>
-          <p>Senior QA Automation Engineer with 5+ years of experience in web, mobile, API, and AI-driven application testing. Specialized in scalable automation frameworks, CI/CD integration, shift-left testing, and cross-platform validation.</p>
+          <p>Senior QA Automation Engineer with 5+ years of experience in web, mobile, API, manual, database, and AI-driven application testing. Specialized in scalable automation frameworks, CI/CD integration, shift-left testing, design patterns, exploratory testing, and cross-platform validation.</p>
         </div>
         <div class="grid-2">
           <div class="panel highlight">
             <h3>What I do best</h3>
-            <p class="muted">I design maintainable automation architecture, accelerate regression cycles, improve release stability, and make automated quality systems part of real engineering delivery.</p>
+            <p class="muted">I design maintainable automation architecture, accelerate regression cycles, improve release stability, and make quality engineering part of real delivery, not just final-stage testing.</p>
             <div class="pill-list">
               <span class="pill">Framework Design</span>
-              <span class="pill">Automation Strategy</span>
+              <span class="pill">Manual + Automation Strategy</span>
               <span class="pill">Shift-Left Testing</span>
               <span class="pill">CI Quality Gates</span>
             </div>
           </div>
           <div class="panel">
-            <h3>Career direction</h3>
-            <p class="muted">Open to roles where I can drive quality engineering maturity, framework ownership, cross-platform automation, and stronger release confidence across distributed product teams.</p>
+            <h3>What I help teams achieve</h3>
+            <p class="muted">Reduce regression cycles, stabilize automation suites, improve API confidence, strengthen release quality, and build frameworks that scale with product complexity.</p>
             <div class="pill-list">
               <span class="pill">Senior QA Automation</span>
               <span class="pill">SDET</span>
@@ -734,12 +745,12 @@
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">Skills</div>
-          <h2>Technical Skills</h2>
-          <p>Grouped by how recruiters and engineering leads usually evaluate senior quality engineering capability.</p>
+          <h2>Complete QA Skill Stack</h2>
+          <p>Structured for how engineering leaders and recruiters evaluate senior quality engineering capability.</p>
         </div>
         <div class="grid-3">
           <div class="panel">
-            <h3>Test Automation</h3>
+            <h3>Automation Stack</h3>
             <div class="skills-list">
               <span class="pill">Selenium WebDriver</span>
               <span class="pill">Playwright</span>
@@ -748,6 +759,7 @@
               <span class="pill">TestNG</span>
             </div>
           </div>
+
           <div class="panel">
             <h3>API & Performance</h3>
             <div class="skills-list">
@@ -755,9 +767,10 @@
               <span class="pill">Rest Assured</span>
               <span class="pill">Swagger</span>
               <span class="pill">JMeter</span>
-              <span class="pill">Integration Testing</span>
+              <span class="pill">REST APIs</span>
             </div>
           </div>
+
           <div class="panel">
             <h3>Programming & Data</h3>
             <div class="skills-list">
@@ -768,8 +781,9 @@
               <span class="pill">MySQL</span>
             </div>
           </div>
+
           <div class="panel">
-            <h3>DevOps / CI-CD</h3>
+            <h3>CI/CD & DevOps</h3>
             <div class="skills-list">
               <span class="pill">GitHub Actions</span>
               <span class="pill">Jenkins</span>
@@ -779,26 +793,93 @@
               <span class="pill">Docker</span>
             </div>
           </div>
+
           <div class="panel">
-            <h3>Testing Types</h3>
+            <h3>Manual & Exploratory Testing</h3>
             <div class="skills-list">
-              <span class="pill">Functional</span>
-              <span class="pill">Regression</span>
-              <span class="pill">Smoke</span>
-              <span class="pill">Sanity</span>
-              <span class="pill">UAT</span>
-              <span class="pill">Accessibility</span>
+              <span class="pill">Functional Testing</span>
+              <span class="pill">Regression Testing</span>
+              <span class="pill">Exploratory Testing</span>
+              <span class="pill">UAT Validation</span>
+              <span class="pill">Ad-hoc Testing</span>
+              <span class="pill">Test Case Design</span>
             </div>
           </div>
+
           <div class="panel">
-            <h3>AI Testing</h3>
+            <h3>QA Strategy & Validation</h3>
             <div class="skills-list">
-              <span class="pill">Intent Validation</span>
-              <span class="pill">Response Consistency</span>
-              <span class="pill">Fallback Handling</span>
-              <span class="pill">Regression Impact Analysis</span>
-              <span class="pill">Output Validation</span>
+              <span class="pill">Shift-Left Testing</span>
+              <span class="pill">Risk-Based Testing</span>
+              <span class="pill">Cross-Platform Validation</span>
+              <span class="pill">DB Validation (Basic)</span>
+              <span class="pill">AI Output Validation</span>
+              <span class="pill">Defect Analysis</span>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="architecture">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Architecture</div>
+          <h2>Automation Architecture & Design Patterns</h2>
+          <p>Framework thinking, reusability, and maintainable automation design are core to how I work.</p>
+        </div>
+        <div class="grid-2">
+          <div class="pattern-card">
+            <h3>Page Object Model (POM)</h3>
+            <p class="muted">Modular UI automation structure separating test logic from page interactions for maintainability and long-term scale.</p>
+          </div>
+          <div class="pattern-card">
+            <h3>Service Object Model</h3>
+            <p class="muted">Reusable API abstraction layer for scalable endpoint validation, request handling, and cleaner test code.</p>
+          </div>
+          <div class="pattern-card">
+            <h3>Data-Driven Testing</h3>
+            <p class="muted">Parameterized testing using externalized data to improve coverage and reduce repetitive test implementation.</p>
+          </div>
+          <div class="pattern-card">
+            <h3>Layered Test Architecture</h3>
+            <p class="muted">Separation of test, service, utility, config, and reporting layers for maintainable framework structure.</p>
+          </div>
+          <div class="pattern-card">
+            <h3>Reusable Utility Framework</h3>
+            <p class="muted">Centralized logging, configuration management, wait helpers, and common utilities for consistency across suites.</p>
+          </div>
+          <div class="pattern-card">
+            <h3>Basic DB Validation</h3>
+            <p class="muted">Validated records, transaction effects, and data consistency using SQL/MySQL checks as part of end-to-end quality flows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="deliver">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Delivery</div>
+          <h2>What I Deliver</h2>
+          <p>Business-relevant outcomes, not just test execution.</p>
+        </div>
+        <div class="grid-4">
+          <div class="deliver-card">
+            <h3>Faster Regression</h3>
+            <p class="muted">Reliable automation integrated into pipelines to reduce repetitive manual effort and speed up release cycles.</p>
+          </div>
+          <div class="deliver-card">
+            <h3>Release Confidence</h3>
+            <p class="muted">Improved release quality through stronger API validation, cross-platform coverage, and defect prevention.</p>
+          </div>
+          <div class="deliver-card">
+            <h3>Scalable Frameworks</h3>
+            <p class="muted">Built modular architecture that teams can maintain and expand without test suite chaos.</p>
+          </div>
+          <div class="deliver-card">
+            <h3>Better Defect Detection</h3>
+            <p class="muted">Used shift-left testing, exploratory checks, and structured validation to catch issues earlier.</p>
           </div>
         </div>
       </div>
@@ -820,21 +901,24 @@
               </div>
               <div class="meta">2021 – Present</div>
             </div>
-            <p class="muted">Owning automation architecture, API validation, release-quality acceleration, and CI-driven automation workflows across web, mobile, and AI-influenced products.</p>
+            <p class="muted">Owned automation architecture, API validation, manual test strategy, basic DB checks, release acceleration, and CI-driven automation workflows across web, mobile, and AI-influenced products.</p>
             <ul>
               <li>Architected and maintained scalable automation frameworks for web, mobile, and API systems.</li>
               <li>Designed layered framework architecture using Page Object Model and Service Object Model.</li>
+              <li>Tested 500+ API endpoints with reusable validation flows and structured service components.</li>
               <li>Increased automation coverage from 40% to 85%+ while reducing production defects by 30%.</li>
               <li>Reduced regression cycle by 70% through CI/CD integration and automation-first execution.</li>
-              <li>Built API automation coverage for 150+ endpoints through reusable service abstractions.</li>
-              <li>Implemented shift-left testing, identifying 60% of critical defects in earlier integration stages.</li>
-              <li>Maintained clean Git workflows with pull requests, branch-based development, and CI checks.</li>
+              <li>Performed manual, exploratory, and business-flow validation where automation was not the right fit.</li>
+              <li>Used SQL/MySQL-based basic DB validation for data consistency and transaction verification.</li>
+              <li>Implemented shift-left testing, identifying critical defects in earlier integration stages.</li>
             </ul>
             <div class="pill-list">
               <span class="pill">Selenium</span>
               <span class="pill">Playwright</span>
               <span class="pill">Appium</span>
               <span class="pill">Rest Assured</span>
+              <span class="pill">Manual Testing</span>
+              <span class="pill">DB Validation</span>
               <span class="pill">GitHub Actions</span>
               <span class="pill">Jenkins</span>
             </div>
@@ -847,7 +931,7 @@
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">Projects</div>
-          <h2>Real Project Proof</h2>
+          <h2>Featured Automation Work</h2>
           <p>Each project is framed with domain, delivery, impact, and stack to make the portfolio more convincing to recruiters.</p>
         </div>
         <div class="grid-2">
@@ -858,6 +942,7 @@
             <p class="muted"><strong>Impact:</strong> stronger checkout reliability and repeatable regression validation.</p>
             <p class="muted"><strong>Stack:</strong> Playwright, TypeScript, API validation, CI integration</p>
           </div>
+
           <div class="project-card">
             <span class="project-tag">Fintech</span>
             <h3>Snap – Loan Management Platform</h3>
@@ -865,6 +950,7 @@
             <p class="muted"><strong>Impact:</strong> reduced manual execution effort by 60%.</p>
             <p class="muted"><strong>Stack:</strong> API automation, structured validation, CI pipelines</p>
           </div>
+
           <div class="project-card">
             <span class="project-tag">Banking • Mobile</span>
             <h3>Mobile Banking Application</h3>
@@ -872,6 +958,7 @@
             <p class="muted"><strong>Impact:</strong> improved defect detection rate by 30%.</p>
             <p class="muted"><strong>Stack:</strong> Appium, Java, Android automation</p>
           </div>
+
           <div class="project-card">
             <span class="project-tag">AI Validation</span>
             <h3>AI-Powered Customer Support Chatbot</h3>
@@ -879,13 +966,16 @@
             <p class="muted"><strong>Impact:</strong> stronger response reliability after model changes.</p>
             <p class="muted"><strong>Stack:</strong> AI output validation, regression strategy, quality analysis</p>
           </div>
+
           <div class="project-card">
             <span class="project-tag">Personal Framework</span>
             <h3>Playwright API Automation Framework</h3>
             <p class="muted">Built a production-ready API automation framework with layered service abstraction, structured logging, configuration management, and data-driven testing.</p>
+            <p class="muted"><strong>Impact:</strong> scalable validation for large API surfaces including 500+ endpoint testing scenarios.</p>
             <p class="muted"><strong>Stack:</strong> Playwright, TypeScript, GitHub Actions</p>
             <a href="https://github.com/saurabh-21032000/playwright-api-automation" target="_blank" rel="noreferrer">Open Repository</a>
           </div>
+
           <div class="project-card">
             <span class="project-tag">Personal Framework</span>
             <h3>Mobile Automation Framework – Appium</h3>
@@ -929,7 +1019,7 @@
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">Tools</div>
-          <h2>Recruiter confidence stack</h2>
+          <h2>Tools I Work With Daily</h2>
           <p>A clean tools section that acts like a capability strip for hiring managers scanning the site quickly.</p>
         </div>
         <div class="tool-row">
@@ -941,8 +1031,8 @@
           <div class="tool-card"><strong>Jenkins</strong><span class="muted">Pipeline execution</span></div>
           <div class="tool-card"><strong>Azure DevOps</strong><span class="muted">Release integration</span></div>
           <div class="tool-card"><strong>BrowserStack</strong><span class="muted">Cross-platform runs</span></div>
-          <div class="tool-card"><strong>Docker</strong><span class="muted">Execution environment</span></div>
-          <div class="tool-card"><strong>JMeter</strong><span class="muted">Performance testing</span></div>
+          <div class="tool-card"><strong>Jira</strong><span class="muted">Defect tracking</span></div>
+          <div class="tool-card"><strong>TestRail / Zephyr</strong><span class="muted">Test management</span></div>
         </div>
       </div>
     </section>
@@ -951,24 +1041,24 @@
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">Why Hire Me</div>
-          <h2>Why teams hire me</h2>
-          <p>A recruiter-focused section that positions the profile beyond a standard tester resume.</p>
+          <h2>Why recruiters shortlist me</h2>
+          <p>I combine framework ownership, release-focused thinking, and hands-on automation execution across web, mobile, API, manual, and quality validation systems.</p>
         </div>
         <div class="grid-4">
           <div class="strength-card">
-            <h3>Framework ownership</h3>
+            <h3>Framework Ownership</h3>
             <p class="muted">I do not just write scripts. I build maintainable automation systems that teams can scale with confidence.</p>
           </div>
           <div class="strength-card">
-            <h3>CI/CD integration</h3>
+            <h3>CI/CD Integration</h3>
             <p class="muted">I connect quality directly with pipelines so automation becomes part of engineering delivery, not an afterthought.</p>
           </div>
           <div class="strength-card">
-            <h3>Cross-platform validation</h3>
-            <p class="muted">I work across web, mobile, API, and AI-driven products with structured validation coverage.</p>
+            <h3>Cross-Platform Quality</h3>
+            <p class="muted">I work across web, mobile, API, manual, DB, and AI-driven products with structured validation coverage.</p>
           </div>
           <div class="strength-card">
-            <h3>Release-quality mindset</h3>
+            <h3>Release-Quality Mindset</h3>
             <p class="muted">My focus is business-critical reliability, defect prevention, and confidence before release, not just pass/fail execution.</p>
           </div>
         </div>
@@ -980,12 +1070,12 @@
         <div class="section-head">
           <div class="eyebrow">Resume</div>
           <h2>Download my resume</h2>
-          <p>Recruiters can directly download the latest PDF version from the site. Keep the uploaded file name exactly aligned with the code link.</p>
+          <p>A detailed overview of my experience, frameworks, tools, impact metrics, and project work in QA automation and release engineering.</p>
         </div>
         <div class="resume-box">
           <div>
-            <h3>One-click recruiter-ready resume access</h3>
-            <p>The site is currently linked to <strong>Saurabh_Yadav_Quality_Automation_Engineer.pdf</strong>. If you rename the file later, update the button link in the HTML as well.</p>
+            <h3>Resume access</h3>
+            <p>Includes experience across automation, manual testing, API validation, DB checks, CI/CD integration, and framework architecture.</p>
           </div>
           <div>
             <a class="btn btn-primary" href="Saurabh_Yadav_Quality_Automation_Engineer.pdf" download>Download Resume PDF</a>
@@ -1008,33 +1098,30 @@
             <p class="muted">I typically respond within 24 hours.</p>
 
             <form action="https://formspree.io/f/xvzvdvkz" method="POST" class="feedback-form">
+              <input type="text" name="name" placeholder="Your full name" required />
+              <input type="email" name="email" placeholder="Your email address" required />
 
-  <input type="text" name="name" placeholder="Your full name" required />
+              <select name="inquiry" required>
+                <option value="">You are reaching out for</option>
+                <option>Hiring opportunity</option>
+                <option>Freelance / Contract work</option>
+                <option>Project collaboration</option>
+                <option>General inquiry</option>
+              </select>
 
-  <input type="email" name="email" placeholder="Your email address" required />
+              <input type="text" name="role" placeholder="SDET / QA Automation / Project details" />
+              <textarea name="message" placeholder="Write your message here" required></textarea>
 
-  <select name="inquiry" required>
-    <option value="">You are reaching out for</option>
-    <option>Hiring opportunity</option>
-    <option>Freelance / Contract work</option>
-    <option>Project collaboration</option>
-    <option>General inquiry</option>
-  </select>
+              <input type="hidden" name="_subject" value="New Portfolio Inquiry - Saurabh Yadav" />
+              <input type="hidden" name="_next" value="https://saurabh-21032000.github.io/thank-you.html" />
 
-  <input type="text" name="role" placeholder="SDET / QA Automation / Project details" />
-
-  <textarea name="message" placeholder="Write your message here" required></textarea>
-
-  <!-- 🔥 YEH ADD KARNA HAI -->
-  <input type="hidden" name="_next" value="https://saurabh-21032000.github.io/thank-you.html" />
-
-  <button type="submit" class="btn btn-primary">Send Message</button>
-
-</form>          </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
 
           <div class="feedback-card">
             <h3>Best use cases</h3>
-            <p class="muted">Use this form if you want to contact me for full-time roles, contract work, freelance projects, automation consulting, or collaboration.</p>
+            <p class="muted">Use this form if you want to contact me for full-time roles, contract work, freelance projects, automation consulting, QA process improvement, or collaboration.</p>
             <div class="pill-list">
               <span class="pill">Hiring Opportunity</span>
               <span class="pill">Freelance Work</span>
@@ -1052,7 +1139,7 @@
         <div class="section-head">
           <div class="eyebrow">Contact Details</div>
           <h2>Let’s connect</h2>
-          <p>A more polished contact block with direct recruiter-relevant details.</p>
+          <p>Open to Senior QA Automation, SDET, and quality engineering opportunities across product companies, startups, and global remote teams.</p>
         </div>
         <div class="contact-grid">
           <div class="contact-card">
